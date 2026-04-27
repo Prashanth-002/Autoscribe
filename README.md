@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📘 AutoScribe – Personal Generative AI Note Assistant
 
-## Getting Started
+## 🚀 Overview
+AutoScribe is an AI-powered web application that transforms how users interact with documents by automating note-taking, summarization, and question answering.
 
-First, run the development server:
+Instead of manually reading lengthy PDFs and writing notes, AutoScribe uses Generative AI, Natural Language Processing (NLP), and semantic search to generate structured, context-aware notes instantly.
+
+---
+
+## 🎯 Key Features
+
+### 📄 Document Processing
+- Upload PDF files
+- Automatic text extraction
+- Smart chunking for efficient processing
+
+### 🤖 AI-Powered Assistance
+- Context-aware summarization
+- Natural language question answering
+- Intelligent note generation
+
+### 🔍 Semantic Search
+- Uses vector embeddings (Google Gemini)
+- Retrieves meaning-based results (not just keywords)
+
+### 📝 Rich Text Editor
+- Highlight, annotate, and format notes
+- Insert AI-generated answers directly
+- Real-time editing and saving
+
+### 📤 Export Functionality
+- Export notes to DOCX format
+- Maintain formatting (headings, lists, etc.)
+
+### 🔐 Authentication & Security
+- User authentication via Clerk
+- Secure file storage with Convex DB
+
+---
+
+## ⚙️ Tech Stack
+
+### 🖥️ Frontend
+- Next.js
+- React.js
+- Tailwind CSS
+- TipTap Editor
+
+### ⚙️ Backend
+- Node.js
+- Express.js
+- Convex (Backend-as-a-Service)
+
+### 🤖 AI & Processing
+- Google Gemini API
+- LangChain
+- Vector Embeddings
+
+### 🗄️ Database
+- Convex DB (Vector Store)
+
+### 🔐 Authentication
+- Clerk
+
+---
+
+## 🔄 Workflow
+
+1. User uploads PDF  
+2. System extracts text  
+3. Text is split into chunks  
+4. Embeddings are generated  
+5. Stored in vector database  
+6. User asks query / highlights text  
+7. Semantic search retrieves relevant content  
+8. AI generates structured answer  
+9. Output shown in editor  
+10. User edits and exports notes  
+
+---
+
+## 🧪 Installation & Setup
 
 ```bash
+# Clone repository
+git clone https://github.com/Prashanth-002/Autoscribe.git
+
+# Navigate to project
+cd autoscribe
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
