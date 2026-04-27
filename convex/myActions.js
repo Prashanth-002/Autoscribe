@@ -46,7 +46,7 @@ export const ingest = action({
       chunks,
       { fileId: args.fileId },
       new GoogleGenerativeAIEmbeddings({
-        apiKey: "AIzaSyAsYdDOfJ7378o6BuKK4ixp8hngIKCvYfM",
+        apiKey: "Use Your Key",
         model: "text-embedding-004",
         taskType: TaskType.RETRIEVAL_DOCUMENT,
         title: "Document title",
